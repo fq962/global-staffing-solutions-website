@@ -1,6 +1,13 @@
 // Sección Hero de la landing page
+'use client';
 
 export default function Hero() {
+  const handleContactUs = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="h-auto lg:h-[500px] py-8 lg:py-0" style={{ backgroundColor: '#1E3A8A' }}>
       <div className="container mx-auto px-8 sm:px-6 md:px-8 lg:px-20 h-full flex items-center">
@@ -14,7 +21,10 @@ export default function Hero() {
               Expand your operations without opening an office abroad. We handle recruitment, HR, compliance, and local labor regulations.
             </p>
             {/* Botón Contact Us (solo visible en móvil) */}
-            <button className="lg:hidden w-full sm:w-auto px-8 py-3 bg-[#5d4602] text-white font-semibold rounded hover:bg-[#4a3801] transition-colors">
+            <button 
+              onClick={handleContactUs}
+              className="lg:hidden w-full sm:w-auto px-8 py-3 bg-[#132658] text-white font-semibold rounded hover:bg-[#0e1b3f] transition-colors"
+            >
               Contact Us
             </button>
           </div>

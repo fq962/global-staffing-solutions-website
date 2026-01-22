@@ -11,7 +11,7 @@ export default function About() {
   };
   return (
     <section className="h-auto lg:h-[500px] py-8 lg:py-0 overflow-hidden" style={{ backgroundColor: '#E0E0E0' }}>
-      <div className="container mx-auto px-8 sm:px-6 md:px-8 lg:px-20 h-full flex items-center overflow-hidden">
+      <div className="container mx-auto px-8 sm:px-6 md:px-8 h-full flex items-center overflow-hidden">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 h-full">
           {/* Lado izquierdo - Imagen */}
           <div className="w-full flex items-center justify-center order-2 lg:order-1">

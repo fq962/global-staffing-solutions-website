@@ -1,7 +1,15 @@
 // Sección Services de la landing page
+'use client';
+
 import ServiceCard from '@/components/ui/ServiceCard';
 
 export default function Services() {
+  const handleGetStarted = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const services = [
     {
       icon: (
@@ -62,7 +70,7 @@ export default function Services() {
         </div>
         
         {/* Grid de servicios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 lg:mb-12">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
@@ -71,6 +79,16 @@ export default function Services() {
               description={service.description}
             />
           ))}
+        </div>
+        
+        {/* Botón Get Started */}
+        <div className="flex justify-center">
+          <button 
+            onClick={handleGetStarted}
+            className="px-8 py-3 bg-[#1E3A8A] text-white font-semibold rounded hover:bg-[#132658] transition-colors"
+          >
+            Get Started
+          </button>
         </div>
       </div>
     </section>
