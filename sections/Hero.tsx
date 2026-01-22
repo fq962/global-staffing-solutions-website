@@ -2,15 +2,15 @@
 
 export default function Hero() {
   return (
-    <section className="h-auto lg:h-[500px] py-8 lg:py-0" style={{ backgroundColor: '#F2B705' }}>
+    <section className="h-auto lg:h-[500px] py-8 lg:py-0" style={{ backgroundColor: '#1E3A8A' }}>
       <div className="container mx-auto px-8 sm:px-6 md:px-8 lg:px-20 h-full flex items-center">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Lado izquierdo - Headline y Subheadline */}
           <div className="flex flex-col justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mb-6" style={{ color: '#1A1A1A' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mb-6" style={{ color: '#fff' }}>
               Your team abroad, built and managed by experts.
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 lg:mb-0" style={{ color: '#1A1A1A' }}>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 lg:mb-0" style={{ color: '#fff' }}>
               Expand your operations without opening an office abroad. We handle recruitment, HR, compliance, and local labor regulations.
             </p>
             {/* Botón Contact Us (solo visible en móvil) */}
@@ -21,7 +21,7 @@ export default function Hero() {
           
           {/* Lado derecho - Formulario de contacto (oculto en móvil) */}
           <div className="hidden lg:flex items-center justify-center">
-            <div className="w-full max-w-md rounded-lg p-4" style={{ backgroundColor: '#5d4602' }}>
+            <div className="w-full max-w-md rounded-lg p-4" style={{ backgroundColor: '#132658' }}>
               <h2 className="text-xl font-bold mb-4 text-white">
                 Contact Us to Learn About Your Project
               </h2>
@@ -75,7 +75,7 @@ export default function Hero() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-white text-[#5d4602] font-semibold py-2 px-6 rounded hover:bg-gray-100 transition-colors text-sm"
+                  className="w-full bg-white text-[#132658] font-semibold py-2 px-6 rounded hover:bg-gray-100 transition-colors text-sm"
                 >
                   Send
                 </button>

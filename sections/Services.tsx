@@ -54,7 +54,7 @@ export default function Services() {
       <div className="container mx-auto px-8 sm:px-6 md:px-8 lg:px-20">
         <div className="w-full mb-8 lg:mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-4 lg:mb-6" style={{ color: '#1A1A1A' }}>
-            How Can We Help You
+          Our Services
           </h2>
           <p className="text-base sm:text-lg md:text-lg lg:text-lg font-normal max-w-4xl mx-auto" style={{ color: '#1A1A1A' }}>
             At Global Staffing Solutions, we manage every aspect of the outsourcing process so you can focus on growing your business. Our comprehensive services include:

@@ -1,7 +1,14 @@
 // Sección About de la landing page
+'use client';
 import Image from 'next/image';
 
 export default function About() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="h-auto lg:h-[500px] py-8 lg:py-0 overflow-hidden" style={{ backgroundColor: '#E0E0E0' }}>
       <div className="container mx-auto px-8 sm:px-6 md:px-8 lg:px-20 h-full flex items-center overflow-hidden">
@@ -23,7 +30,7 @@ export default function About() {
           <div className="flex flex-col justify-center items-start w-full h-full overflow-hidden order-1 lg:order-2">
             <div className="w-full">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-4 lg:mb-6" style={{ color: '#1A1A1A' }}>
-                Why Global Staffing Solutions?
+              About Us
               </h2>
               <div className="space-y-3 lg:space-y-2 text-base sm:text-lg md:text-lg lg:text-sm font-normal" style={{ color: '#1A1A1A' }}>
               <p className="word-wrap:break-word">
@@ -39,6 +46,12 @@ export default function About() {
                 Our mission is to provide qualified, reliable, and high-performing professionals who integrate seamlessly into your organization, so you can achieve more with less complexity.
               </p>
               </div>
+              <button
+                onClick={scrollToContact}
+                className="mt-6 bg-[#1E3A8A] text-white font-semibold py-3 px-8 rounded hover:bg-[#132658] transition-colors"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>

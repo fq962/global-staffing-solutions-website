@@ -10,7 +10,7 @@ export default function HowItWorks() {
     {
       number: "2",
       title: "Candidate Selection",
-      description: "Using more than 50 professional assessment tools—including psychometric, aptitude, and DISC tests—we identify and present top candidates that fit your technical and cultural requirements."
+      description: "Using more than 50 professional assessment tools, including psychometric, aptitude, and DISC tests, we identify and present top candidates that fit your technical and cultural requirements."
     },
     {
       number: "3",
