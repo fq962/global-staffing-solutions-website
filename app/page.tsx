@@ -1,10 +1,11 @@
-import Hero from '@/sections/Hero';
-import About from '@/sections/About';
-import ChooseUs from '@/sections/ChooseUs';
-import Services from '@/sections/Services';
-import HowItWorks from '@/sections/HowItWorks';
-import Contact from '@/sections/Contact';
-import Footer from '@/sections/Footer';
+import Hero from "@/sections/Hero";
+import About from "@/sections/About";
+import ChooseUs from "@/sections/ChooseUs";
+import Services from "@/sections/Services";
+import HowItWorks from "@/sections/HowItWorks";
+import WhoWePartnerWith from "@/sections/WhoWePartnerWith";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Services />
       <ChooseUs />
+      <WhoWePartnerWith />
       <HowItWorks />
       <Contact />
       <Footer />

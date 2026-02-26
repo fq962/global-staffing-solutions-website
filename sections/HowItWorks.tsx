@@ -25,7 +25,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="h-auto py-8 lg:py-12" style={{ backgroundColor: '#fff' }}>
+    <section className="h-auto py-8 lg:py-12" style={{ backgroundColor: '#E0E0E0' }}>
       <div className="container mx-auto px-8 sm:px-6 md:px-8 lg:px-20">
         {/* Título y descripción principal */}
         <div className="w-full mb-8 lg:mb-12 text-center">
