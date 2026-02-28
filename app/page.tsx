@@ -1,3 +1,4 @@
+import Navbar from "@/sections/Navbar";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import ChooseUs from "@/sections/ChooseUs";
@@ -10,6 +11,7 @@ import Footer from "@/sections/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <Navbar />
       <Hero />
       <About />
       <Services />
